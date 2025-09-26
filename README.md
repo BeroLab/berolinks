@@ -7,6 +7,8 @@ Um template minimalista e responsivo de página de links pessoais, inspirado no 
 - ✅ Totalmente responsivo (mobile, tablet, desktop)
 - ✅ Design moderno com glassmorphism
 - ✅ Animações suaves e interativas
+- ✅ **Sistema OpenGraph completo com imagem dinâmica**
+- ✅ Otimizado para redes sociais (Facebook, Twitter, WhatsApp)
 - ✅ Fácil de personalizar
 - ✅ Sem dependências complexas (usa apenas Tailwind CSS via CDN)
 
@@ -50,6 +52,49 @@ Substitua os links pelos seus próprios:
     Seu Texto do Link
 </a>
 ```
+
+#### **Meta Tags OpenGraph (linhas 14-33):**
+Personalize como seu site aparece no Facebook, WhatsApp e outras redes sociais:
+
+```html
+<!-- Título que aparece quando compartilhado -->
+<meta property="og:title" content="Seu Nome | BeroLinks">
+
+<!-- Descrição que aparece quando compartilhado -->
+<meta property="og:description" content="Todos os meus links em um só lugar - Sua descrição aqui">
+
+<!-- URL do seu site -->
+<meta property="og:url" content="https://seu-dominio.com">
+
+<!-- Nome do site -->
+<meta property="og:site_name" content="BeroLinks">
+
+<!-- Twitter Cards -->
+<meta name="twitter:site" content="@seuusername">
+<meta name="twitter:creator" content="@seuusername">
+<meta name="twitter:title" content="Seu Nome | BeroLinks">
+<meta name="twitter:description" content="Todos os meus links em um só lugar - Sua descrição aqui">
+```
+
+#### **Imagem de Preview Dinâmica:**
+O site usa uma imagem dinâmica que é gerada automaticamente. Para personalizá-la, edite a URL na linha 17:
+
+**Opção 1 - TailGraph (Recomendado):**
+```html
+<meta property="og:image" content="https://og.tailgraph.com/og?fontFamily=Roboto&title=🔗%20SEU_NOME%20%7C%20BeroLinks&titleTailwind=font-bold%20text-gray-800%20text-6xl&text=Sua%20descrição%20aqui&textTailwind=text-gray-700%20text-2xl%20mt-4&logoTailwind=h-20&bgTailwind=bg-gradient-to-br%20from-indigo-600%20via-purple-600%20to-blue-800&footer=@seuusername&footerTailwind=text-indigo-200">
+```
+
+**Opção 2 - Imagem Simples:**
+```html
+<meta property="og:image" content="https://dummyimage.com/1200x630/1f2937/ffffff&text=🔗+SEU_NOME+|+BeroLinks">
+```
+
+**Opção 3 - Sua Própria Imagem:**
+```html
+<meta property="og:image" content="https://seusite.com/sua-imagem.png">
+```
+
+*Dica: A imagem deve ter 1200x630 pixels para melhor qualidade*
 
 #### **Rodapé (linha 87):**
 ```html
@@ -116,6 +161,26 @@ O layout é totalmente responsivo usando Tailwind CSS. As principais classes res
 - `sm:` - Tablets (640px+)
 - `lg:` - Desktop (1024px+)
 - Sem prefixo - Mobile (padrão)
+
+## 🚀 Sistema OpenGraph Dinâmico
+
+O template inclui um sistema completo de **OpenGraph com imagem de preview dinâmica**:
+
+### 📱 Como funciona:
+- **Imagem gerada automaticamente** com seu nome e descrição
+- **Preview perfeito** no Facebook, Instagram, WhatsApp, LinkedIn
+- **Twitter Cards** otimizados para melhor engajamento
+- **URL dinâmica** que muda conforme você personaliza
+
+### 🎨 Serviços de imagem suportados:
+1. **TailGraph** - Gradientes bonitos e tipografia profissional
+2. **DummyImage** - Simples e rápido
+3. **Sua própria imagem** - Upload personalizado
+
+### ✅ Testadores OpenGraph:
+- [OpenGraph.xyz](https://www.opengraph.xyz) - Teste como fica no Facebook
+- [Twitter Card Validator](https://cards-dev.twitter.com/validator) - Teste no Twitter
+- [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) - Teste no LinkedIn
 
 ## 📱 Responsividade
 
