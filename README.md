@@ -99,7 +99,7 @@ O site usa uma imagem dinâmica que é gerada automaticamente. Para personalizá
 #### **Rodapé (linha 87):**
 ```html
 <a href="https://seusite.com" target="_blank" rel="noopener noreferrer">
-    Feito com ❤️ por Seu Nome
+    Feito com ❤️ por Seu Nome usando o BeroLinks
 </a>
 ```
 
@@ -113,27 +113,23 @@ Substitua a URL da imagem de fundo na linha 12:
 
 ### 4. Teste localmente
 
-Abra o arquivo `index.html` diretamente no seu navegador ou use um servidor local:
+Abra o arquivo `index.html` diretamente no seu navegador ou use a extensão Live Server:
 
-```bash
-# Com Python
-python -m http.server 8000
+**Opção 1 - Direto no navegador:**
+- Clique duas vezes no arquivo `index.html`
+- Ou arraste o arquivo para o navegador
 
-# Com Node.js (http-server)
-npx http-server
-
-# Com PHP
-php -S localhost:8000
-```
+**Opção 2 - Live Server (Recomendado):**
+1. Instale a extensão "Live Server" no VS Code
+2. Clique com o botão direito no arquivo `index.html`
+3. Selecione "Open with Live Server"
+4. O site abrirá automaticamente em `http://127.0.0.1:5500`
 
 ### 5. Faça deploy
 
 Você pode hospedar gratuitamente em:
 
-- **GitHub Pages**: Commit e push para o GitHub, depois ative o GitHub Pages
-- **Netlify**: Arraste e solte a pasta no Netlify
 - **Vercel**: Conecte seu repositório GitHub ao Vercel
-- **Surge.sh**: `npx surge` na pasta do projeto
 
 ## 🎨 Personalização avançada
 
@@ -151,7 +147,7 @@ O projeto usa Tailwind CSS. Você pode alterar as cores modificando as classes:
 Para adicionar um novo botão, copie um dos botões existentes e modifique:
 
 1. **URL** no atributo `href`
-2. **Ícone SVG** (você pode encontrar ícones em sites como [Heroicons](https://heroicons.com) ou [Tabler Icons](https://tabler-icons.io))
+2. **Ícone SVG** (você pode encontrar ícones em sites como [Icônes](https://icones.js.org/))
 3. **Texto** do botão
 
 ### Mudando o layout
